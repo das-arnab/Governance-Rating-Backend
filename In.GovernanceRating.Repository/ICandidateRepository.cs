@@ -2,7 +2,7 @@
 
 namespace In.GovernanceRating.Repository
 {
-    public class Class1
+    public interface ICandidateRepository
     {
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "In.GovernanceRating.Reposit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "In.GovernanceRating.Entities", "In.GovernanceRating.Entities\In.GovernanceRating.Entities.csproj", "{64A5577F-D4C9-4FF8-8456-0AB636D07094}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67C06914-F209-498D-A7C9-DDBF3901EED6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
