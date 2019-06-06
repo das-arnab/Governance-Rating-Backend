@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO.Compression;
 using System.Text;
 using In.GovernanceRating.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -8,20 +7,20 @@ using Microsoft.EntityFrameworkCore;
 namespace In.GovernanceRating.Repository
 {
     /// <summary>
-    /// TODO: Need to remove?
+    /// Contains entities which have application wide contexts.
     /// </summary>
-    public class CandidateContext: DbContext
+    public class ApplicationContext: DbContext
     {
-        public DbSet<Candidate> Candidates { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=blogging.db");
+            //base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Candidate>();
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }
