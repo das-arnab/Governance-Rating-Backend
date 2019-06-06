@@ -4,6 +4,9 @@ Services + DB designs
 ## Linked Project
 https://github.com/orgs/das-arnab/projects/1
 
+## Technical Debts
+1. System.ComponentModel.Annotations is used seperately from System.EntityFrameworkCore.SqlServer
+
 
 ----
 ### Markdown Reference
