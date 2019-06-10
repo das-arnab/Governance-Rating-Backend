@@ -9,6 +9,7 @@ namespace In.GovernanceRating.Entities
     /// </summary>
     public class DevelopmentActivity
     {
+        // By default property name Id will be configured as Key
         public int Id { get; set; }
 
         public string ActivityName { get; set; }

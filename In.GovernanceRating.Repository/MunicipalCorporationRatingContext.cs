@@ -8,6 +8,7 @@ namespace In.GovernanceRating.Repository
 {
     /// <summary>
     /// Context related to rating of Municipal Corporation administrative body.
+    /// TODO: Need it now?
     /// </summary>
     public class MunicipalCorporationRatingContext: DbContext
     {

@@ -10,6 +10,7 @@ namespace In.GovernanceRating.Entities
     /// </summary>
     public class WardActivityRating
     {
+        // By default property name Id will be configured as Key
         public int Id { get; set; }
 
         public short StarsRating { get; set; }
