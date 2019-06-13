@@ -15,6 +15,8 @@ namespace In.GovernanceRating.Repository
 
         public DbSet<Candidate> Candidates { get; set; }
 
+        public DbSet<DevelopmentActivity> DevelopmentActivities { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
