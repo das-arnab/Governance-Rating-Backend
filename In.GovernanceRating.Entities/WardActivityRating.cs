@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Principal;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace In.GovernanceRating.Entities
         // By default property name Id will be configured as Key
         public int Id { get; set; }
 
-        public short StarsRating { get; set; }
+        public short? StarsRating { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -23,6 +24,7 @@ namespace In.GovernanceRating.Entities
 
         public MunicipalCorporationWard Ward { get; set; }
 
+        [Required]
         public User User { get; set; }
     }
 }

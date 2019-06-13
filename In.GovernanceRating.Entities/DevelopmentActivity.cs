@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace In.GovernanceRating.Entities
@@ -12,6 +13,7 @@ namespace In.GovernanceRating.Entities
         // By default property name Id will be configured as Key
         public int Id { get; set; }
 
+        [Required]
         public string ActivityName { get; set; }
 
         public string Description { get; set; }

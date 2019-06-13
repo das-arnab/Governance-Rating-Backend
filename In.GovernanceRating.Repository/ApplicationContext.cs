@@ -13,6 +13,8 @@ namespace In.GovernanceRating.Repository
     {
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Candidate> Candidates { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
@@ -21,6 +23,8 @@ namespace In.GovernanceRating.Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Candidate>().Property(p => p.Age)
         }
     }
 }

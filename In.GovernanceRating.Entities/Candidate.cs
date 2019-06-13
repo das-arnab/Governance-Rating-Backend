@@ -8,16 +8,18 @@ namespace In.GovernanceRating.Entities
 {
     public class Candidate
     {
-        // By default property name Id will be configured as Key
+        // By default property name Id will be configured as Key.
+        // Value will be generated on add by default.
         public int Id { get; set; }
 
+        [Required]  // At least name is required
         public string Name { get; set; }
 
-        public short Age { get; set; }
+        public short? Age { get; set; }
 
         public string HighestEducationText { get; set; }
 
-        public short PoliticalTenure { get; set; }
+        public short? PoliticalTenure { get; set; }
 
         /// <summary>
         /// TODO: What should be the type? latitude longitude tuple? Is short description needed?
