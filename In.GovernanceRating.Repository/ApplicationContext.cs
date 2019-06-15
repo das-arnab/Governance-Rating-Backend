@@ -12,10 +12,10 @@ namespace In.GovernanceRating.Repository
     public class ApplicationContext: DbContext
     {
         public DbSet<Candidate> Candidates { get; set; }
+        
+        public DbSet<DevelopmentActivity> DevelopmentActivities { get; set; }
 
         public DbSet<User> Users { get; set; }
-
-        public DbSet<DevelopmentActivity> DevelopmentActivities { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
