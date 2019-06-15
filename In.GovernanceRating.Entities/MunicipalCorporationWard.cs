@@ -13,7 +13,7 @@ namespace In.GovernanceRating.Entities
         // By default property name Id will be configured as Key
         public int Id { get; set; }
 
-        [Required]
+        [Required, MaxLength(20)]
         public string WardNumber { get; set; }
 
         [Required]

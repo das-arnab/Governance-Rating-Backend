@@ -10,11 +10,13 @@ namespace In.GovernanceRating.Entities
         // By default property name Id will be configured as Key
         public int Id { get; set; }
 
-        [Required]
+        [Required, MaxLength(30)]
         public string Name { get; set; }
 
+        [MaxLength(50)]
         public string Email { get; set; }
 
+        [MaxLength(15)]
         public string Phone { get; set; }
 
         public bool? IsVerified { get; set; }

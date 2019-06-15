@@ -13,9 +13,10 @@ namespace In.GovernanceRating.Entities
         // By default property name Id will be configured as Key
         public int Id { get; set; }
 
-        [Required]
+        [MaxLength(100), Required]
         public string ActivityName { get; set; }
 
+        [MaxLength(250)]
         public string Description { get; set; }
     }
 }
