@@ -7,11 +7,11 @@ namespace In.GovernanceRating.Repository
 {
     public class CandidateRepository: ICandidateRepository
     {
-        private readonly CandidateContext _candidateContext;
+        private readonly ApplicationContext _context;
 
-        public CandidateRepository(CandidateContext candidateContext)
+        public CandidateRepository(ApplicationContext context)
         {
-            _candidateContext = candidateContext;
+            _context = context;
         }
 
         public Candidate GetCandidate(int id)
