@@ -7,9 +7,9 @@ namespace In.GovernanceRating.Repository
 {
     public class CandidateRepository: ICandidateRepository
     {
-        private readonly ApplicationContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CandidateRepository(ApplicationContext context)
+        public CandidateRepository(ApplicationDbContext context)
         {
             _context = context;
         }

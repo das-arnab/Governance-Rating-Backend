@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using In.GovernanceRating.Entities;
+﻿using In.GovernanceRating.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace In.GovernanceRating.Repository
@@ -9,7 +6,7 @@ namespace In.GovernanceRating.Repository
     /// <summary>
     /// Contains entities which have application wide contexts.
     /// </summary>
-    public class ApplicationContext: DbContext
+    public class ApplicationDbContext: DbContext
     {
         public DbSet<Candidate> Candidates { get; set; }
         
